@@ -1,0 +1,46 @@
+<!-- Card -->
+
+<ul class="list-group" id="scrapeNewsList">
+
+
+{{#each result}}
+	<li class="list-group-item d-flex justify-content-between align-items-center">
+
+	<div class="card">
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center  py-3 " style="position:relative">
+        <div>
+
+            <img src="{{this.img}}" width="200" height="175" style="float:left;position:absolute;top:0;height:100%;"></img>
+
+            <h5 class="pink-text card-title" style="display:inline-block;">
+                <strong>
+                    <a href="{{this.link}}" style="padding-left:10px;margin-left:200px;position: absolute;right:200px;float:left;left: 0;"> {{this.title}} </a>
+                </strong>
+
+                <button  type="submit" class="btn btn-outline-primary waves-effect float-right saveArticle" id="{{this.id}}" style="position: absolute;right: 75px;top: 20px;">Save</button>
+
+
+            </h5>
+
+
+
+            <p style="margin-left: 200px;padding: 0px 10px;">{{this.para}}</p>
+
+    		
+            
+        </div>
+    </div>
+    <div>
+    </div>
+
+    <!-- Content -->
+</div>
+</li>
+
+ {{/each}}
+
+</ul>
+
+<!-- Card -->
+                  
